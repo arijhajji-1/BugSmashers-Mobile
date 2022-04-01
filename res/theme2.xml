@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="11" useXmlUI="false">
+    <image name="Appels.png"  />
+    <image name="Back.jpg"  />
+    <image name="background.jpg"  />
+    <image name="BackgroundRect.png" type="multi"  />
+    <image name="Cracks.jpg"  />
+    <image name="duke.png" type="multi"  />
+    <image name="ESPRITGAZINE.jpg"  />
+    <image name="gradient-overlay.png"  />
+    <image name="login-background.jpg"  />
+    <image name="logo.png"  />
+    <image name="notes.png" type="multi"  />
+    <image name="person.png"  />
+    <image name="progress.png" type="multi"  />
+    <image name="round-mask.png" type="multi"  />
+    <image name="selected-walkthru.png" type="multi"  />
+    <image name="sidemenu-top.png" type="multi"  />
+    <image name="text-field-underline.png"  />
+    <theme name="Theme 1">
+        <val key="@includeNativeBool" value="true" />
+    </theme>
+    <image name="unselected-walkthru.png" type="multi"  />
+    <image name="user-picture.jpg"  />
+    <image name="walthru-radio-selected.png" type="multi"  />
+    <image name="walthru-radio-unselected.png" type="multi"  />
+</resource>
