@@ -220,8 +220,8 @@ public class serviceReclamation {
           System.out.println(r);
         System.out.println("********");
        //String url = Statics.BASE_URL + "create?name=" + t.getName() + "&status=" + t.getStatus();
-       String url = Statics.BASE_URL + "/ajoutReclamation?idCommande=\"+r.getIdCommande()+\"&sujet=\"+r.getSujet()+\"&description=\"+r.getDescription()+\"&categorie=\"+r.getCategorie()+\"&date=\"+r.getDate();";
-    
+       //String url = Statics.BASE_URL + "/ajoutReclamation?idCommande=\"+r.getIdCommande()+\"&sujet=\"+r.getSujet()+\"&description=\"+r.getDescription()+\"&categorie=\"+r.getCategorie()+\"&date=\"+r.getDate();";
+    String url = Statics.BASE_URL + "/ajoutReclamation?idCommande="+r.getIdCommande()+"&categorie="+r.getCategorie()+"&sujet="+r.getSujet()+"&description="+r.getDescription()+"&date="+r.getDate(); 
        req.setUrl(url);
        req.setPost(false);
        req.addArgument("id commande", r.getIdCommande()+"");

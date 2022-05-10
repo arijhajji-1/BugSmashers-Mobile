@@ -58,15 +58,15 @@ public class AjoutReclamation extends Form{
     private TextArea desc;
     private Picker dateR;
     private Label lbid,lbc,lbd,lbs,lbdes,recl,livr;
-    private Container cn1,cn2,cn3,ctn1,ctn2,crud;
+    private Container cn1,cn2,cn3,ctn1,ctn2;
     private ComboBox cb1;
-    private Button btn1,btn2,btn3,aff,mod,supp;
+    private Button btn1,btn2,btn3;
     
      public AjoutReclamation(Form previous) {
         setTitle("Soumettre une reclamation");
         setLayout(BoxLayout.y());
         
-                 //Form f1 = new Form("ajouter une réclamation", BoxLayout.y());
+                 
        idc= new TextField(null,"id de la commande",4,TextField.NUMERIC);
        suj= new TextField(null,"sujet");
        desc= new TextField(null,"description",500,TextArea.ANY);
@@ -87,13 +87,9 @@ public class AjoutReclamation extends Form{
        cb1.addItem("montage");
        cb1.addItem("reparation");
         cn3.add(lbc).add(cb1);
-        crud= new Container(BoxLayout.x());
+      
        btn3= new Button("envoyer"); 
-        aff= new Button("afficher");
-        mod= new Button ("modifier");
-        supp= new Button("supprimer");
-        crud.addAll(btn3,aff,mod,supp);
-      // f1.addAll(lbid,idc,cn3,lbs,suj,cn1,cn2,crud);
+        
         
         btn3.addActionListener(new ActionListener() {
             @Override
@@ -119,7 +115,7 @@ public class AjoutReclamation extends Form{
             }
         });
         
-        addAll(lbid,idc,cn3,lbs,suj,cn1,cn2,crud);
+        addAll(lbid,idc,cn3,lbs,suj,cn1,cn2,btn3);
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e->previous.showBack());
                 
      }

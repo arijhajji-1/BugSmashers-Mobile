@@ -36,7 +36,7 @@ public class home extends Form{
 
         btnAddTask.addActionListener(e -> new ListReclamation(current).show());
         btnAddTask1.addActionListener(e -> new AjoutReclamation(current).show());
-        btnAddTask2.addActionListener(e -> new statReclamation().createPieChartForm().show());
+        btnAddTask2.addActionListener(e -> new statReclamation().createPieChartForm());
        
         addAll(btnAddTask,btnAddTask1,btnAddTask2);
 
